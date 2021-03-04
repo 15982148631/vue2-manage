@@ -20,7 +20,8 @@ const actions = {
 	async getAdminData({commit}){
 		try{
 			const res = await getAdminInfo()
-			if (res.status == 1) {
+            console.log(res)
+			if (res.status == 200) {
 				commit('saveAdminInfo', res.data);
 			}else{
 				throw new Error(res.type)

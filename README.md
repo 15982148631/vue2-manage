@@ -32,3 +32,7 @@ npm run local (访问本地后台系统，需运行node-elm后台系统)
 
 ```
 
+### 参考：
+1. 关于mapActions使用：
+https://blog.csdn.net/xiaohuangdilhd/article/details/84310297
+

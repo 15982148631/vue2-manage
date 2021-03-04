@@ -9,14 +9,12 @@ export const login = data =>fetch('http://localhost:8096/login', data, 'POST');
 /**
  * 退出
  */
-
-export const signout = () => fetch('/admin/signout');
+export const logout = () => fetch('http://localhost:8096/logout');
 
 /**
  * 获取用户信息
  */
-
-export const getAdminInfo = () => fetch('/admin/info');
+export const getAdminInfo = () => fetch('http://localhost:8096/userSession');
 
 /**
  * api请求量

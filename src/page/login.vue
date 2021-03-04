@@ -48,7 +48,7 @@
 		},
 		mounted(){
 			this.showLogin = true;
-			if (!this.adminInfo.id) {
+			if (!this.adminInfo.nickname) {
     			this.getAdminData()
     		}
 		},
@@ -61,7 +61,7 @@
 				this.$refs[formName].validate(async (valid) => {
 					if (valid) {
 						const  res =await login({username: this.loginForm.username, password: this.loginForm.password,remember:'1'})
-						console.log(res);
+						//console.log(res);
 						if (res.status == 200) {
 							this.$message({
 		                        type: 'success',
@@ -87,7 +87,7 @@
 		},
 		watch: {
 			adminInfo: function (newValue){
-				if (newValue.id) {
+				if (newValue.token) {
 					this.$message({
                         type: 'success',
                         message: '检测到您之前登录过，将自动登录'
