@@ -21,7 +21,7 @@ const adminSet = r => require.ensure([], () => r(require('@/page/adminSet')), 'a
 const sendMessage = r => require.ensure([], () => r(require('@/page/sendMessage')), 'sendMessage');
 const explain = r => require.ensure([], () => r(require('@/page/explain')), 'explain');
 const explain2 = r => require.ensure([], () => r(require('@/page/explain2')), 'explain2');
-
+const usermanage = r => require.ensure([], () => r(require('@/page/usermanage')), 'usermanage');
 const routes = [
 	{
 		path: '/',
@@ -95,6 +95,10 @@ const routes = [
             path: '/explain2',
             component: explain2,
             meta: ['说明2', '说明2'],
+        },{
+            path: '/usermanage',
+            component: usermanage,
+            meta: ['管理员管理', '管理员管理'],
         }]
 	}
 ]

@@ -16,7 +16,6 @@
 </template>
 
 <script>
-	import {signout} from '@/api/getData'
 	import {logout} from '@/api/getData'
 	import {baseImgPath} from '@/config/env'
 	import {mapActions, mapState} from 'vuex'

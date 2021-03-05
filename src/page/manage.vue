@@ -37,6 +37,11 @@
 						<el-menu-item index="explain">说明</el-menu-item>
                         <el-menu-item index="explain2">说明2</el-menu-item>
 					</el-submenu>
+                    <el-submenu index="8">
+                        <template slot="title"><i class="el-icon-warning"></i>系统管理</template>
+                        <el-menu-item index="usermanage">管理员管理</el-menu-item>
+                        <el-menu-item index="powermanage">权限管理</el-menu-item>
+                    </el-submenu>
 				</el-menu>
 			</el-col>
 			<el-col :span="20" style="height: 100%;overflow: auto;">

@@ -16,6 +16,18 @@ export const logout = () => fetch('http://localhost:8096/logout');
  */
 export const getAdminInfo = () => fetch('http://localhost:8096/userSession');
 
+
+/**
+ *
+ * 获取指定管理员列表
+ */
+export const getAdminList = data => fetch('http://localhost:8096/core/getsysUserList',data,'POST');
+
+/**
+ * 获取管理员总量
+ */
+export const getAdminCount = () => fetch('http://localhost:8096/core/getCount');
+
 /**
  * api请求量
  */
@@ -224,4 +236,5 @@ export const getAddressById = address_id => fetch('/v1/addresse/' + address_id);
  */
 
 export const getUserCity = () => fetch('/v1/user/city/count');
+
 
